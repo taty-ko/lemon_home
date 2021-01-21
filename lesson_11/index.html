@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Lesson 11, Bicycles</title>
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
         <link rel="stylesheet" href="css/style.css">
 
     </head>
@@ -13,10 +14,8 @@
          <div class="container">
 
              <ul class="left-menu"> 
-                <li> <a href="#">About us</a> </li>
-                <li> <a href="#">Work</a> </li>
-                
-                
+                <li> <a href="#about">About us</a> </li>
+                <li> <a href="#work">Work</a> </li>
                 
              </ul>
 
@@ -25,8 +24,9 @@
             </a>
 
             <ul class="right-menu">
-                 <li><a href="#">Shop</a></li>
-                 <li><a href="#">Contact</a></li>
+                 <li><a href="#shop">Shop</a></li>
+                 <li><a href="#contact">Contact</a></li>
+                
              </ul>
 
          </div>
@@ -34,10 +34,33 @@
 
      <main>
          <section class="section main-slider">
-<img src="img/banner_1.jpg" alt="bike">
+<!-- Slider main container -->
+<div class="swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"> 
+            <img src="img/banner_1.jpg" alt="banner">
+        </div>
+        <div class="swiper-slide"> 
+            <img src="img/banner_slider_1.jpg" alt="banner">
+        </div>
+        <div class="swiper-slide"> 
+            <img src="img/banner_slider_2.jpg" alt="banner">
+        </div>
+        
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+</div>
          </section>
 
-         <section class="text">
+         <section class="about" id="about">
    
             <img src="img/green_1.png" alt="part 1">
             
@@ -46,50 +69,90 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias deleniti commodi et, illum, eius placeat consequuntur, dolore esse similique quisquam nulla obcaecati distinctio earum quam facilis. Quisquam, eaque cumque? Neque. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel quas porro delectus saepe, repellat consequatur voluptatum odit sapiente, eius harum dicta fugit aut provident ipsa. Aliquam beatae voluptates deleniti officia.</p>
          </section>
 
-         <section class="main-66-33">
-             <div class="flex-item-66">
-                 <img src="img/banner_2_66.jpg" alt="">
 
-             </div>
-             <div class="flex-item-33">
-                 
-                     <img src="img/green_2.png" alt="" class="small-img-bottom">
-                     <h3>Vintage oliva</h3>
-                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa cum porro doloremque voluptatibus impedit. Aliquam beatae voluptates deleniti.</p>
-                    <img src="img/_banner_1_33.jpg" alt="">
-             </div>
-         </section>
+            <section class="section work" id="work">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-66">
+                            <img src="img/banner_2_66.jpg" alt="bike">
+                            <img src="img/bike_shop_now.png" class="icon" alt="">
+                        </div>
+                        <div class="col-33">
+                            <div class="col-inner">
+                                <div class="text-block">
+                                    <img src="img/green_2.png" alt="">
+                                <h4>Vintage oliva</h4>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived.</p>
+                                </div>
+                                <div class="image-block">
+                                    <img src="/img/_banner_1_33.jpg" alt="">
+                                </div>
+                            </div>
+                                
+                        </div>
+                    </div>
 
-         <section class="main-66-33">
-            
-            <div class="flex-item-33">
+                </div>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-33">
+                            <div class="text-block">
+                                <img src="img/green_2.png" alt="">
+                                <h4>La Boriosa</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse porro laudantium ab, blanditiis, fugit molestias delectus odio iusto ipsa consequuntur enim dolores laboriosam. At quis, nihil blanditiis nam error deserunt!</p>
+                            </div>
+                            <div class="image-block">
+                                <img src="/img/_banner_2_33.jpg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="col-66">
+                            <img src="/img/banner_3_66.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-33">
+                            <img src="/img/high_banner_1_33.jpg" alt="">
+                        </div>
+                        <div class="col-33">
+                            <div class="text-block">
+                                <img src="/img/green_4.png" alt="">
+                                <h4>Retro Bike - M. Hulot</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat in inventore quo aperiam asperiores odio ad unde error vero? Ex, numquam alias consequatur corrupti incidunt molestiae. Repellat fuga placeat dolorum!</p>
+                            </div>
+                            <div class="image-block">
+                                <img src="/img/_banner_3_33.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-33">
+                            <img src="/img/hing_banner_2_33.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="review-slider">
+   
+                <img src="/img/twitter.png" alt="review">
                 
-                    <img src="img/green_3.png" alt="" class="small-img-bottom">
-                    <h3>La Boriosa</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa cum porro doloremque voluptatibus impedit. Aliquam beatae voluptates deleniti.</p>
-                   <img src="img/_banner_2_33.jpg" alt="">
-            </div>
-            <div class="flex-item-66">
-                <img src="img/banner_3_66.jpg" alt="">
+                <h4>A new generation of vintage bike</h4>
+                        
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias deleniti commodi et, illum, eius placeat consequuntur, dolore esse similique quisquam nulla obcaecati distinctio earum quam facilis. Quisquam, eaque cumque? Neque. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel quas porro delectus saepe, repellat consequatur voluptatum odit sapiente, eius harum dicta fugit aut provident ipsa. Aliquam beatae voluptates deleniti officia.</p>
+             </section>
 
-            </div>
-        </section>
 
-        <section class="main-33">
-            <div class="flex-item-33">
-                <img src="img/high_banner_1_33.jpg" alt="">
-            </div>
 
-            <div class="flex-item-33">
-                <img src="img/green_4.png" alt="" class="small-img-bottom">
-                <h3>Retro Bike - M. Hulot</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa cum porro doloremque voluptatibus impedit. Aliquam beatae voluptates deleniti.</p>
-                <img src="img/_banner_3_33.jpg" alt="">
-        </div>
-        <div class="flex-item-33">
-            <img src="img/hing_banner_2_33.jpg" alt="">
-        </div>
-        </section>
+
+
+
+
+
+
+         
 
         <section class="text">
    
@@ -124,7 +187,11 @@
      </footer>
 
  </div>
+ <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+<script src="js/jQuery.3.5.1.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
+<script src="js/scripts.js"></script>
     </body>
     
 </html>
