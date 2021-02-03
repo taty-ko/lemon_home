@@ -22,3 +22,19 @@ jQuery (function()
     },
   })
   });
+
+  var mySwiper = new Swiper('.rewiew .swiper-container', {
+    loop: true,
+    pagination: {
+        el: '.swiper-pagination-text',
+        clickable: true
+    },
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false
+    },
+});
+
+$('.header').on('click', '.menu-button', function () {
+    $('.header').toggleClass('menu-opened');
+});
